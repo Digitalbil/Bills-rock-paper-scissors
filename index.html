@@ -1,8 +1,8 @@
 <html>
     <head>
-        <title>Rock, paper, scissors</title>
-        <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <script src="//code.jquery.com/jquery.js"></script>
+        <title>Rock, Paper, Scissors</title>
+        <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
         <style>
             body {
@@ -17,6 +17,9 @@
             .chat {
                 height: 340px;
             }
+			.center{
+				text-align:center;
+			}
         </style>
     </head>
     <body>
@@ -51,20 +54,18 @@
                 <div class="col-md-8">
                     <form class="sectionArea" id="game">
                         <h4>Choices</h4>
-
-                        <input class="form-check-input" id="rock" type="radio" name="choice" value="rock" checked />
-                        <label class="form-check-label" for="rock">Rock</label>
-                        <br />
-
-                        <input class="form-check-input" id="paper" type="radio" name="choice" value="paper" />
-                        <label class="form-check-label" for="paper">Paper</label>
-                        <br />
-
-                        <input class="form-check-input" id="scissors" type="radio" name="choice" value="scissors" />
-                        <label class="form-check-label" for="scissors">Scissors</label>
-                        <br />
-
-                        <input type="submit" class="btn btn-primary" value="Submit" />
+						<div class="row">
+							<input class="form-check-input" id="rock" type="radio" name="choice" value="rock" checked style="background-image:url('images/rock.png');" />
+							<label class="form-check-label" for="rock">Rock</label>
+							<br />
+							<input class="form-check-input" id="paper" type="radio" name="choice" value="paper" style="background-image:url('images/paper.png');" />
+							<label class="form-check-label" for="paper">Paper</label>
+							<br />
+							<input class="form-check-input" id="scissors" type="radio" name="choice" value="scissors" style="background-image:url('images/scissors.png');" />
+							<label class="form-check-label" for="scissors">Scissors</label>
+							<br />
+							<input type="submit" class="btn btn-primary" value="Submit" />
+						</div>
                     </form>
 
                     <div class="sectionArea">
